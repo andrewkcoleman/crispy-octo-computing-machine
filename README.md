@@ -8,7 +8,7 @@ This app allows the user to create expenses, keep photos of expense receipts, an
 
 ## How to run the app
 
-> Note: Install Ionic if required: `npm install -g @ionic/cli`.
+> Note: Install Ionic if required `npm install -g @ionic/cli`.
 
 1) Download or clone this repository.
 2) Navigate to the folder `Expenses Tracking App`.
