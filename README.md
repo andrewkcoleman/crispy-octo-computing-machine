@@ -4,7 +4,7 @@ An app written using the *Ionic* framework and *Angular*
 
 ## App function
 
-This app allows the user to create expenses, keep photos of expense receipts, and keep a tally of the total to be claimed.
+Enables the user to create expenses, keep photos of expense receipts, and keep a tally of the total to be claimed.
 
 ## How to run the app
 
