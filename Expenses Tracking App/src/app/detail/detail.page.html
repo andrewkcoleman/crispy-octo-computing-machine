@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/expenses"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ note.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="deleteExpense()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div *ngIf="item9">
+      <ion-img src="{{ item9.base64 ? item9.base64 : item9.webviewPath }}"></ion-img>
+    </div>
+  </ion-card>
+    <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Expense</ion-card-subtitle>
+      <ion-card-title>{{note.value | currency:'GBP'}}</ion-card-title>
+    </ion-card-header>
+
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <p>Created on <i>{{ note.datetime | date: "medium" }}</i></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+  <div>
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addNewButton(noteIdd)">
+    <ion-icon name="camera"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</div>
+
+
+
+
+
